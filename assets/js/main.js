@@ -109,6 +109,10 @@
 
 	// Tiles.
 		var $tiles = $('.tiles > article');
+		
+		$('#software-tile').click(function() {
+			$('#cad-desc').hide();
+		});
 
 		$tiles.each(function() {
 
