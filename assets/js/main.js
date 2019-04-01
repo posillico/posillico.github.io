@@ -109,10 +109,6 @@
 
 	// Tiles.
 		var $tiles = $('.tiles > article');
-		
-		$('#software-tile').click(function() {
-			$('#cad-desc').hide();
-		});
 
 		$tiles.each(function() {
 
@@ -162,6 +158,11 @@
 						// Otherwise ...
 							else {
 								location.href = href;
+								//$link = $link.append('-detail'); //make it append the description section??????
+								$link.toggle();
+								
+								let linkresult = new $link
+								window.alert(linkresult);
 
 							}
 
