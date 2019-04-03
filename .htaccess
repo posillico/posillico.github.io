@@ -1,0 +1,14 @@
+#prevent viewing
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+ 
+# forbid viewing of directories
+Options All -Indexes
+
+# hide this list of files from being seen when listing a directory
+IndexIgnore .htaccess */README*
+
+# disable the server signature- helps with preformance
+ServerSignature Off
