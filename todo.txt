@@ -1,9 +1,13 @@
 Todo
 
 new assets
-clean css progress 50%
-75%
+larger images to open on detail
+cad section needs to push text below images on mobile (use custom div class)
+
+clean css progress 75%
+check mobile width
 100%
+
 post to github
 bug check
 link to resume/linked in
@@ -18,6 +22,7 @@ link to resume/linked in
 -------------------------
 Things to post
 
+website itself
 combustion calculator
 act ?
 sample solidworks
@@ -28,3 +33,4 @@ web dev includes crypto price alert system
 python art enhancer standalone project?
 temp differential airfoil
 windturbine twist calculator
+crypto trading theory under misc
