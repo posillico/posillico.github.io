@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -32,8 +33,9 @@
 								<h1>Welcome to My Portfolio</h1>
 							</header>
 							<div class="content">
-								<p>A collection of projects and experiments in aerospace engineering,<br />
-									software and more, that I will continue to grow and share.</p>
+								<p>A collection of projects in aerospace engineering, software<br />
+									and more, that I will continuiously expand.<br/>
+									Source codes coming soon to github</p>
 								<ul class="actions">
 									<li><a href="#one" class="button next scrolly">Jump</a></li>
 								</ul>
@@ -96,6 +98,7 @@
 										<span class="image left">
 											<a href="images/portfolio1.png" target="_blank">
 												<img src="images/portfolio1.png" alt>
+												<small>Work in Progress</small></img>
 											</a>
 										</span>
 											This website itself is built by me with the help of some open-source code to speedup the
@@ -105,23 +108,27 @@
 										<br/><br/><h-tag>#WebDev #Software</h-tag>
 										</p>
 									</div><hr/>
-									<h4>Turbojet 2D QuasiFlow Combustion Chamber Calculator</h4>
-									<div class="row"><p>									
+									<h4>Image De-Compression and Upscaling Algorithm</h4>
+									<div class="row"><p>										
 										<span class="image left">
-											<a href="images/pic01.jpg" target="_blank">
-												<img src="images/pic01.jpg" alt>
+											<a href="images/imageenhancer1.png" target="_blank">
+												<img src="images/imageenhancer1.png" alt>
+												<small>Originally for GIMP, finishing standalone release</small></img>
 											</a>
 										</span>
-											This calculator program computes significant values in any specified 2D point inside the
-											flow. Written in C++, and results compiled with Matlab.
-										<br/><br/><h-tag>#Engineering #Software</h-tag>
-										</p>
-									</div><hr/>
+											Older image files (especially jpg from old digital cameras)
+											are overcompressed and saved in underwhelming resolution. I attempt
+											to remove compression with a program that checks adjacent pixel's
+											characteristics to add smoothing blurs. Then it uses the <a href="https://en
+											.wikipedia.org/wiki/Directional_Cubic_Convolution_Interpolation#The_algorithm"
+											target="_blank">DCCI algorithm</a> to scale. Source code soon.
+										<br/><br/><h-tag>#Math #Software #Misc #Python</h-tag></p>
+									</div><hr/>									
 									<h4>CryptoCurrency Push-Alerts Application</h4>
 									<div class="row"><p>
 										<span class="image left">
-											<a href="images/coinsentry_notify1.png" target="_blank">
-												<img src="images/coinsentry_notify1.png" alt>
+											<a href="images/coinsentry_notify1.jpg" target="_blank">
+												<img src="images/coinsentry_notify1.jpg" alt>
 												<small>Private Alpha Example</small></img>
 											</a>
 										</span>
@@ -130,6 +137,23 @@
 											windows	desktop as well as an email push. The user sets what criteria and exchange they
 											they wish to monitor.
 										<br/><br/><h-tag>#Software #CryptoCurrency</h-tag>
+										</p>
+									</div><hr/>
+									<h4>1D QuasiFlow Afterburner Chamber Calculator</h4>
+									<div class="row"><p>
+										<span class="image left">
+											<a href="images/quasi1dafb1.jpg" target="_blank">
+												<img src="images/quasi1dafb1.jpg" alt>
+												<small>Example plot from imported data in matlab</small></img>
+											</a><br/>
+											<a href="images/quasi1dafb2.png" target="_blank">
+												<img src="images/quasi1dafb2.png" alt>
+												<small>Screenshot of some of the C++ code</small></img>
+											</a>
+										</span>
+											<b>Reformatting source code, coming soon! </b>This calculator program computes significant values in any specified 2D point inside the
+											flow. Written in C++, and results compiled with Matlab.
+										<br/><br/><h-tag>#Engineering #Software</h-tag>
 										</p>
 									</div>
 								</div>
@@ -141,10 +165,11 @@
 									<h3>Solidworks Examples</h3>
 									<h4>Castor Assembly</h4>
 										<div class="row">
-											<span class="col-6 col-12-small">
-												<iframe frameborder='0'	src="files/CAD/Castor_Assembly.html" 
-												name='PreviewFrame3D' id='PreviewFrame3D' width='100%' height='340'>
-												</iframe>
+											<span class="image left">
+												<a href="files/CAD/Castor_Assembly.html" target="_blank">
+													<img src="images/Castor_Assembly.jpg" alt>
+													<small>Click the image to interact!</small></img>
+												</a>
 											</span>
 											<span class="col-6 col-12-small">
 												A caster used to minimize roll friction of industrial carts.
@@ -153,31 +178,52 @@
 										</div><hr/>
 									<h4>Piston Assembly</h4>
 									<div class="row">
-										<span class="col-6 col-12-small">
-											<iframe frameborder='0'	src="files/CAD/Piston_Assembly.html" 
-											name='PreviewFrame3D' id='PreviewFrame3D' width='100%' height='340'>
-											</iframe>
-										</span>
+										<span class="image left">
+												<a href="files/CAD/Piston_Assembly.html" target="_blank">
+													<img src="images/Piston_Assembly.jpg" alt>
+													<small>Click the image to interact!</small></img>
+												</a>
+											</span>
 										<span class="col-6 col-12-small">
 											Example piston with connecting rod attached.
 											<br/><br/><h-tag>#Solidworks #CAD</h-tag>
 										</span>
-									</div>									
+									</div>
 								</div>
 								<div class="inner" id="research-desc" style="display: none">
 									<header class="major">
 						<!-- Engineering Research -->
 										<h2>Engineering Research</h2>
 									</header>
-						<h4>??????????????</h4>
-									<div class="row"><p>										
+						<h4>Effects of a Thermal Gradient Airfoil in a Low Speed Wind Tunnel</h4>
+									<div class="row"><p>
 										<span class="image left">
-											<a href="images/pic01.jpg" target="_blank">
-												<img src="images/pic01.jpg" alt>
+											<a href="images/thermalgradientairfoil1.jpg" target="_blank">
+												<img src="images/thermalgradientairfoil1.jpg" alt>
+												<small>Preliminary sketches</small></img>
+											</a><br/>
+											<a href="images/thermalgradientairfoil2.jpg" target="_blank">
+												<img src="images/thermalgradientairfoil2.jpg" alt>
+												<small>Assembly prototype</small></img>
+											</a><br/>
+											<a href="images/thermalgradientairfoil3.jpg" target="_blank">
+												<img src="images/thermalgradientairfoil3.jpg" alt>
+												<small>Teammate operating low speed wind tunnel</small></img>
 											</a>
 										</span>
-											?????????????????????????????????
-										<br/><br/><h-tag>#Math</h-tag></p>
+											A common job for an aeronautical engineer is match 
+											<a href="https://en.wikipedia.org/wiki/Airfoil" target="_blank">airfoils</a> 
+											to specific applications.
+											There are drawbacks to traditional wings, where mechanical devices add complexity. One
+											possible modification to airfoil performance is a dempterature differential. I worked
+											with a small team to design, build and test an airfoil with a temperature differential
+											between the upper and lower surfaces. Utilizing 
+											<a href="https://en.wikipedia.org/wiki/Thermoelectric_cooling#Operating_principle" 
+											target="_blank">Peltier-Devices</a>, the airfoil could
+											create a differential using electricity. The theory of whether lift and draggable
+											co-efficients could be changed using this modification is explored in my report.
+											<b>paper posting soon</b>
+										<br/><br/><h-tag>#Math #Theory #Engineering</h-tag></p>
 									</div>
 								</div>
 								<div class="inner" id="misc-desc" style="display: none">
@@ -185,24 +231,24 @@
 						<!-- Misc Projects -->
 										<h2>Misc Projects</h2>
 									</header>
-						<h4>Image De-Compression and Upscaling Algorithm</h4>
-									<div class="row"><p>										
+									<h4>Image De-Compression and Upscaling Algorithm</h4>
+									<div class="row"><p>
 										<span class="image left">
-											<a href="images/pic01.jpg" target="_blank">
-												<img src="images/pic01.jpg" alt>
+											<a href="images/imageenhancer1.png" target="_blank">
+												<img src="images/imageenhancer1.png" alt>
 												<small>Work in Progress</small></img>
 											</a>
 										</span>
-											As monitors and televisions become more advanced, older image files (especially from
-											old digital cameras) were overcompressed and saved in underwhelming resolution. I
-											attempt to remove compression with a program that checks adjacent pixel's
+											Older image files (especially jpg from old digital cameras)
+											are overcompressed and saved in underwhelming resolution. I attempt
+											to remove compression with a program that checks adjacent pixel's
 											characteristics to add smoothing blurs. Then it uses the <a href="https://en
 											.wikipedia.org/wiki/Directional_Cubic_Convolution_Interpolation#The_algorithm"
-											target="_blank">DCCI algorithm</a> to interpolate and enlarge the image.
+											target="_blank">DCCI algorithm</a> to scale. Source code soon.
 										<br/><br/><h-tag>#Math #Software #Misc #Python</h-tag></p>
 									</div><hr/>
 									<h4>CoinSentry LLC (mining and research)</h4>
-									<div class="row"><p>										
+									<div class="row"><p>
 										<span class="image left">
 											<a href="images/coinsentry1.png" target="_blank">
 												<img src="images/coinsentry1.png" alt>
