@@ -1916,7 +1916,7 @@ input, select, textarea {
 			-webkit-transition: color 0.2s ease, outline-color 0.2s ease-in;
 			-ms-transition: color 0.2s ease-in, outline-color 0.2s ease-in;
 			transition: opacity 0.2s ease-in, outline-color 0.2s ease-in;
-			opacity: 0.80;
+			opacity: 0.75;
 			outline: 1px solid;
 			outline-offset: -1px;
 			font-stretch: 10px;
