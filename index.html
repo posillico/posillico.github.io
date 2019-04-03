@@ -33,7 +33,7 @@
 							</header>
 							<div class="content">
 								<p>A collection of projects and experiments in aerospace engineering,<br />
-								 software and more, that I will continue to grow and share.</p>
+									software and more, that I will continue to grow and share.</p>
 								<ul class="actions">
 									<li><a href="#one" class="button next scrolly">Jump</a></li>
 								</ul>
@@ -44,98 +44,195 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- One -->
+						<!-- Section One -->
 							<section id="one" class="tiles">
 								<article>
 									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
+										<img src alt />
 									</span>
 									<header class="major">
-										<h3><a href="#two" class="link" id="soft-projects">>Software Projects</a></h3>
-										<p id="cad-d">C++, Python, VB, Web Dev, Matlab</p>
+										<h3><a href="#soft-desc" class="link" id="soft-tile">Software Projects</a></h3>
+										<p>C++, Python, VB, Web Dev, Matlab</p>
 									</header>
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/pic02.jpg" alt="" />
+										<img src alt />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Engineering CAD</a></h3>
+										<h3><a href="#cad-desc" class="link" id="cad-tile">Engineering CAD</a></h3>
 										<p>Creo/ProE, Solidworks, AutoCAD</p>
 									</header>
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
+										<img src alt />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Engineering Research</a></h3>
+										<h3><a href="#research-desc" class="link" id="research-tile">Engineering Research</a></h3>
 										<p>Simulations, Data Analysis, Theory, DIY</p>
 									</header>
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/pic04.jpg" alt="" />
+										<img src alt />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Misc Projects</a></h3>
-										<p>Math Theory, Game Theory, Arts</p>
+										<h3><a href="#misc-desc" class="link" id="misc-tile">Misc Projects</a></h3>
+										<p>Math Theory, Arts</p>
 									</header>
 								</article>
 							</section>
 
-						<!-- Two -->
+						<!-- Section Two -->
 							<section id="two">
-								<div class="inner">
-									<header class="major" id="soft-projects-detail">
+								<div class="inner" id="soft-desc" style="display: none">
+									<header class="major">
+						<!-- Software Projects -->
 										<h2>Software Projects</h2>
 									</header>
 									<h4>This Web Portfolio</h4>
-										<details>This website itself is built by me with a few snipits of css and javascript to speedup
-										the process. I made it to further practice HTML5, CSS3, and Javascript.</details>
-									<h4>Turbojet 2D QuasiFlow Combustion Chamber Calculator</h4>								
-										<details>This calculator program computes significant values in any specified 2D point inside the flow.
-										Written in C++, and results compiled with Matlab</details>
+									<div class="row"><p>										
+										<span class="image left">
+											<a href="images/portfolio1.png" target="_blank">
+												<img src="images/portfolio1.png" alt>
+											</a>
+										</span>
+											This website itself is built by me with the help of some open-source code to speedup the
+											process. I will add more features and clean up the existing code over time. I have minor
+											experience with web development, so this practice has been greatly progressing my HTML5, 
+											CSS3 and JS knowledge.
+										<br/><br/><h-tag>#WebDev #Software</h-tag>
+										</p>
+									</div><hr/>
+									<h4>Turbojet 2D QuasiFlow Combustion Chamber Calculator</h4>
+									<div class="row"><p>									
+										<span class="image left">
+											<a href="images/pic01.jpg" target="_blank">
+												<img src="images/pic01.jpg" alt>
+											</a>
+										</span>
+											This calculator program computes significant values in any specified 2D point inside the
+											flow. Written in C++, and results compiled with Matlab.
+										<br/><br/><h-tag>#Engineering #Software</h-tag>
+										</p>
+									</div><hr/>
+									<h4>CryptoCurrency Push-Alerts Application</h4>
+									<div class="row"><p>
+										<span class="image left">
+											<a href="images/coinsentry_notify1.png" target="_blank">
+												<img src="images/coinsentry_notify1.png" alt>
+												<small>Private Alpha Example</small></img>
+											</a>
+										</span>
+											A lightweight application written in VB and C++ to utilize data from crypto currency
+											exchanges. The program collects api data and uses it to set alerts that popup on the
+											windows	desktop as well as an email push. The user sets what criteria and exchange they
+											they wish to monitor.
+										<br/><br/><h-tag>#Software #CryptoCurrency</h-tag>
+										</p>
+									</div>
 								</div>
-								<div class="inner" id="cad-desc">
+								<div class="inner" id="cad-desc" style="display: none">
 									<header class="major">
+						<!-- Engineering CAD -->
 										<h2>Engineering CAD</h2>
 									</header>
-									<h4>Titles of project</h4>
-										<details>This website itself is built by me with a few snipits of css and javascript to speedup
-										the process. I made it to further practice HTML5, CSS3, and Javascript.</details>
-									<h4>Title of project</h4>								
-										<details>This calculator program computes significant values in any specified 2D point inside the flow.
-										Written in C++, and results compiled with Matlab</details>
-									<!--<iframe scrolling='no' frameborder='0' allowfullscreen='true' src="files/CAD/Castor_Assembly.html" name='PreviewFrame3D' id='PreviewFrame3D' width='400' height='355'></iframe>
-									-->
+									<h3>Solidworks Examples</h3>
+									<h4>Castor Assembly</h4>
+										<div class="row">
+											<span class="col-6 col-12-small">
+												<iframe frameborder='0'	src="files/CAD/Castor_Assembly.html" 
+												name='PreviewFrame3D' id='PreviewFrame3D' width='100%' height='340'>
+												</iframe>
+											</span>
+											<span class="col-6 col-12-small">
+												A caster used to minimize roll friction of industrial carts.
+												<br/><br/><h-tag>#Solidworks #CAD</h-tag>
+											</span>
+										</div><hr/>
+									<h4>Piston Assembly</h4>
+									<div class="row">
+										<span class="col-6 col-12-small">
+											<iframe frameborder='0'	src="files/CAD/Piston_Assembly.html" 
+											name='PreviewFrame3D' id='PreviewFrame3D' width='100%' height='340'>
+											</iframe>
+										</span>
+										<span class="col-6 col-12-small">
+											Example piston with connecting rod attached.
+											<br/><br/><h-tag>#Solidworks #CAD</h-tag>
+										</span>
+									</div>									
 								</div>
-								<div class="inner">
+								<div class="inner" id="research-desc" style="display: none">
 									<header class="major">
+						<!-- Engineering Research -->
 										<h2>Engineering Research</h2>
 									</header>
-									<h4>Titles of project</h4>
-										<details>This website itself is built by me with a few snipits of css and javascript to speedup
-										the process. I made it to further practice HTML5, CSS3, and Javascript.</details>
-									<h4>Title of project</h4>								
-										<details>This calculator program computes significant values in any specified 2D point inside the flow.
-										Written in C++, and results compiled with Matlab</details>
-										<h4>Title of project</h4>								
-										<details>This calculator program computes significant values in any specified 2D point inside the flow.
-										Written in C++, and results compiled with Matlab</details>
+						<h4>??????????????</h4>
+									<div class="row"><p>										
+										<span class="image left">
+											<a href="images/pic01.jpg" target="_blank">
+												<img src="images/pic01.jpg" alt>
+											</a>
+										</span>
+											?????????????????????????????????
+										<br/><br/><h-tag>#Math</h-tag></p>
+									</div>
 								</div>
-								<div class="inner">
+								<div class="inner" id="misc-desc" style="display: none">
 									<header class="major">
+						<!-- Misc Projects -->
 										<h2>Misc Projects</h2>
 									</header>
-									<p>Details for this section coming soon!
-									Work in progress.</p>
+						<h4>Image De-Compression and Upscaling Algorithm</h4>
+									<div class="row"><p>										
+										<span class="image left">
+											<a href="images/pic01.jpg" target="_blank">
+												<img src="images/pic01.jpg" alt>
+												<small>Work in Progress</small></img>
+											</a>
+										</span>
+											As monitors and televisions become more advanced, older image files (especially from
+											old digital cameras) were overcompressed and saved in underwhelming resolution. I
+											attempt to remove compression with a program that checks adjacent pixel's
+											characteristics to add smoothing blurs. Then it uses the <a href="https://en
+											.wikipedia.org/wiki/Directional_Cubic_Convolution_Interpolation#The_algorithm"
+											target="_blank">DCCI algorithm</a> to interpolate and enlarge the image.
+										<br/><br/><h-tag>#Math #Software #Misc #Python</h-tag></p>
+									</div><hr/>
+									<h4>CoinSentry LLC (mining and research)</h4>
+									<div class="row"><p>										
+										<span class="image left">
+											<a href="images/coinsentry1.png" target="_blank">
+												<img src="images/coinsentry1.png" alt>
+												<small>Hardware research from purchasing decision making</small></img>
+											</a><br/>
+											<a href="images/coinsentry2.png" target="_blank">
+												<img src="images/coinsentry2.png" alt>
+												<small>Data for tuning GPU voltages</small></img>
+											</a><br/>
+											<a href="images/coinsentry3.jpg" target="_blank">
+												<img src="images/coinsentry3.jpg" alt>
+												<small>The two node racks for 16GPUs, test bench in background</small></img>
+											</a>
+										</span>
+											A hand-built group of supercomputer slave nodes managed by a host remote computer.
+											Primarily used to mine <a href="https://en.wikipedia.org/wiki/Proof-of-work_system"
+											target="_blank">PoW</a> cryptocurrencies from 2013 to 2014. I co-founded
+											a company with two objectives, and this was one half. The other half 
+											was a set of cryptocurrency alerts based on a web and desktop client. I created a
+											stripped down linux to fit on flashdrives, and tuned the gpu voltages and clocks
+											to optimize heat and efficiency. The motherboards would support up to 5 cards but
+											for PSU efficiency, 4 HD7850s were the limit each. These things run hot!
+										<br/><br/><h-tag>#Misc #CryptoCurrency</h-tag></p>
+									</div>
 								</div>
 							</section>
 
 					</div>
 
-				<!-- Contact -->
+				<!-- Contact and Resume -->
 					<section id="contact">
 						<div class="inner">
 							<section class="split">
@@ -171,7 +268,8 @@
 									<div class="contact-method">
 										<span class="icon alt fa-home"></span>
 										<h3>Address</h3>
-										<a href="https://www.google.com/maps/search/?api=1&west+melbourne+florida" target="_blank"><span>West Melbourne, Florida 32904<br/>
+										<a href="https://www.google.com/maps/search/?api=1&west+melbourne+florida" target="_blank">
+										<span>West Melbourne, Florida 32904<br/>
 										United States of America</span></a>
 									</div>
 								</section>
@@ -183,11 +281,13 @@
 					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
-								<li><a href="https://github.com/posillico/" target="_blank" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-								<li><a href="https://linkedin.com/in/posillico/" target="_blank" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/posillico/" target="_blank" class="icon alt fa-github">
+								<span class="label">GitHub</span></a></li>
+								<li><a href="https://linkedin.com/in/posillico/" target="_blank" class="icon alt fa-linkedin">
+								<span class="label">LinkedIn</span></a></li>
 							</ul>
 							<ul class="update_footer">
-								<li>Updated Mar 2019</li><li>Created By: Phil Rocco Posillico</a></li>
+								<li>Updated Apr 2019</li><li>Created By: Phil Rocco Posillico</a></li>
 							</ul>
 						</div>
 					</footer>
