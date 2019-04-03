@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video, h-tag {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -85,7 +85,7 @@ input, select, textarea {
 	@media screen and (max-width: 480px) {
 
 		html, body {
-			min-width: 320px;
+			min-width: 450px;
 		}
 
 	}
@@ -170,6 +170,12 @@ input, select, textarea {
 	strong, b {
 		color: #ffffff;
 		font-weight: 600;
+	}
+	
+	small {		
+		position: absolute;
+		margin-top: 0px;		
+		font-size: 0.8em;		
 	}
 
 	em, i {
@@ -1897,7 +1903,23 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 30%;
+			max-width: 40%;
+			color: inherit;
+			text-decoration: none;
+			cursor: pointer;
+			display: inline-block;
+		}
+		
+		.image.left img:hover, .image.right img:hover {
+			color: #9bf1ff !important;
+			-moz-transition: color 0.2s ease-in, outline-color 0.2s ease-in;
+			-webkit-transition: color 0.2s ease, outline-color 0.2s ease-in;
+			-ms-transition: color 0.2s ease-in, outline-color 0.2s ease-in;
+			transition: opacity 0.2s ease-in, outline-color 0.2s ease-in;
+			opacity: 0.80;
+			outline: 1px solid;
+			outline-offset: -1px;
+			font-stretch: 10px;
 		}
 
 			.image.left img, .image.right img {
@@ -1906,13 +1928,13 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 1.5em 1.25em 0;
+			margin: 0 1.0em 0.5em 0;
 			top: 0.25em;
 		}
 
 		.image.right {
 			float: right;
-			margin: 0 0 1.25em 1.5em;
+			margin: 0 0 0.5em 1.0em;
 			top: 0.25em;
 		}
 
@@ -2473,9 +2495,9 @@ input, select, textarea {
 			background-repeat: no-repeat;
 			background-size: cover;
 			cursor: default;
-			height: 40vh;
-			max-height: 40em;
-			min-height: 23em;
+			height: 47.5vh;
+			max-height: 35em;
+			min-height: 18em;
 			overflow: hidden;
 			position: relative;
 			width: 40%;
@@ -2752,7 +2774,7 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			.spotlights > section > .image {
-				width: 40%;
+				width: 45%;
 			}
 
 			.spotlights > section > .content {
@@ -3128,7 +3150,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		/* autofit banner background-image: url("../../images/banner.jpg"); */
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3349,7 +3371,7 @@ input, select, textarea {
 			}
 
 			#main > * > .inner {
-				padding: 4em 0 2em 0 ;
+				padding: 4em 0 3em 0 ;
 				margin: 0 auto;
 				max-width: 65em;
 				width: calc(100% - 6em);
@@ -3697,4 +3719,28 @@ input, select, textarea {
 			transform: none;
 			opacity: 1;
 			visibility: visible;
+		}
+		
+/* Hashtag Navigation */
+
+	h-tag {
+		font-size: 0.8em;
+		-moz-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		border-bottom: dotted 1px;
+		color: inherit;
+		text-decoration: none;
+		cursor: pointer;
+		display: inline-block;
+	}
+
+		h-tag:hover {
+			border-bottom-color: transparent;
+			color: #9bf1ff !important;
+		}
+
+		h-tag:active {
+			color: #53e3fb !important;
 		}
