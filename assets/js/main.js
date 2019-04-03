@@ -1,10 +1,42 @@
+
+/* Hides and shows the description segment on tile click
+section id two */
+	
+function toggleEle(id) {
+	var x = document.getElementById(id);
+	if (x.style.display === 'none') {
+		x.style.display = 'block';
+		} 
+	else {
+			x.style.display = 'none';
+		}
+};
+
+// clears the descriptions from section two, to keep site clean
+function toggleClass() {
+	var id = ['soft-desc','cad-desc','research-desc','misc-desc'];
+	var i;
+	for (i = 0; i <= 3; i++) {
+		var x = document.getElementById(id[i]);
+		x.style.display = 'none';
+	}
+};
+
 (function($) {
+	
+/* 	thought about making a custom element but ended up not needed the javascript
+	class htag extends HTMLElement {
+		constuctor()
+	}
+	var hashtag = window.customElements.define('h-tag', htag);
+	document.body.appendChild(new hashtag()); */
 
 	var	$window = $(window),
 		$body = $('body'),
 		$wrapper = $('#wrapper'),
 		$header = $('#header'),
 		$banner = $('#banner');
+		
 
 	// Breakpoints.
 		breakpoints({
@@ -82,7 +114,7 @@
 
 	};
 
-	// Play initial animations on page load.
+	// Play initial animations on page load. Hide section two of html until user presses buttons.
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
@@ -152,18 +184,18 @@
 
 								// Open in new tab.
 									window.open(href);
-
 							}
 
 						// Otherwise ...
 							else {
+								var new_href = href;
+								while(new_href.charAt(0) ==='#'){
+									new_href = new_href.substr(1);
+								}
+								toggleClass();								
+								toggleEle(new_href);
+								href = '#two';
 								location.href = href;
-								//$link = $link.append('-detail'); //make it append the description section??????
-								$link.toggle();
-								
-								let linkresult = new $link
-								window.alert(linkresult);
-
 							}
 
 					});
@@ -335,5 +367,6 @@
 						$menu._hide();
 
 			});
+			
 
 })(jQuery);
